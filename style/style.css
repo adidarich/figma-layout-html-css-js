@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@font-face {
+    font-family: 'Sen';
+    src: url("../fonts/Sen-Bold.ttf");
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url("../images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png");
+    background-position: center center; /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+    background-size: cover; /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+    background-color: #00000000; /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.button {
+    background: #FFD050;
+    width: 204px;
+    height: 56px;
+    border: 0;
+    display: inline-flex;
+    padding: 16px 48px;
+    align-items: flex-start;
+    gap: 12px;
+    justify-content: center;
+    color: #232536;
+    font-family: Sen, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #f8c23d;
+}
+
+.header {
+    padding: 25px 0;
+    background: #232536;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    vertical-align: bottom;
+}
+
+.menu {
+    margin-left: 621px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 24px;
+}
+
+.menu-item a {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.subscribe {
+    background: #FFF;
+    font-family: 'Sen', sans-serif;
+    font-size: 18px;
+    color: #232536;
+    display: inline-flex;
+    padding: 16px 48px;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    margin-left: 32px;
+}
+
+/*.home-main {*/
+/*    background-image: url("../images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png");*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*    height: 720px;*/
+/*}*/
+
+.home-content {
+    padding-top: 128px;
+    padding-bottom: 192px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.home-content .container {
+    position: relative;
+}
+
+.home-info {
+    max-width: 804px;
+}
+
+.cap-1 {
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.cap-1 span {
+    font-weight: 900;
+}
+
+.home-title {
+    padding-top: 24px;
+    font-family: Sen, sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -2px;
+}
+
+.home-by {
+    padding-top: 24px;
+}
+
+.home-by span {
+    color: #FFD050;
+}
+
+.home-text {
+    padding-top: 16px;
+    width: 599px;
+}
+
+.home-action {
+    padding-top: 48px;
+}
+
+.featured-posts {
+    padding-top: 128px;
+    padding-bottom: 142px;
+    background-color: white;
+    /*margin-top: 32px;*/
+    display: grid;
+    grid-template-columns: 820px 600px;
+    justify-content: center;
+}
+
+.featured-post {
+    /*letter-spacing: -2px;*/
+    color: rgba(35, 37, 54, 1);
+    margin-right: 32px;
+}
+
+.h1 {
+    font-family: Sen, sans-serif;
+    font-size: 36px;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: -2px;
+    padding-bottom: 32px;
+}
+
+.wrapper {
+    width: 733px;
+    box-sizing: border-box;
+    border: 1px solid #ece9e9;
+    padding: 32px;
+}
+
+.cap2 {
+    padding-top: 32px;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.cap2 span {
+    color: #592EA9;
+}
+
+.wrapper h6 {
+    font-family: Sen, sans-serif;
+    padding-top: 16px;
+    line-height: 40px; /* 142.857% */
+    letter-spacing: -1px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.wrapper p {
+    color: #6D6E76;
+}
+
+.wrapper .home-action {
+    padding-top: 32px;
+}
+
+.all-post {
+
+}
+
+.all-post-header {
+    list-style: none;
+    display: flex;
+}
+
+.all-post-header a {
+    margin-left: 280px;
+    text-decoration: none;
+    line-height: 50px; /* 175% */
+}
+
+.all-post-item {
+    width: 517px;
+    height: 181px;
+}
+
+.post {
+    max-width: 369px;
+    padding-top: 8px;
+    font-family: Sen, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+/*.featured-posts-header {*/
+/*    margin-top: 32px;*/
+/*    display: grid;*/
+/*    gap: 32px;*/
+/*    grid-template-columns: 733px 517px;*/
+/*}*/
+
